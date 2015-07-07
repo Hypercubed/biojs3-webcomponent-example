@@ -75,10 +75,7 @@ Polymer({
         .orient('left')
         .ticks(10, '%');
 
-    var svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    Polymer.dom(this.root).appendChild(svgEl);
-
-    var svg = d3.select('svg')
+    var svg = d3.select(this).append('svg')
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom)
       .append('g')
