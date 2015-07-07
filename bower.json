@@ -1,5 +1,5 @@
 {
-  "name": "biojs-component",
+  "name": "bio-component",
   "version": "1.0.0",
   "authors": [
     "Anonymous <anonymous@example.com>"
@@ -11,7 +11,7 @@
     "polymer",
     "biojs"
   ],
-  "main": "biojs-component.html",
+  "main": "bio-component.html",
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/<USERNAME>/biojs-element/",
   "ignore": [

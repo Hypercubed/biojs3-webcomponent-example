@@ -8,18 +8,18 @@
     <script src="../../web-component-tester/browser.js"></script>
 
     <!-- Add the component -->
-    <link rel="import" href="../biojs-component.html">
+    <link rel="import" href="../bio-component.html">
 
   </head>
   <body>
 
     <!-- You can use the document as a place to set up your fixtures. -->
-    <biojs-component url="test"></biojs-component>
+    <bio-component url="test"></bio-component>
 
     <script>
-      var c = document.querySelector('biojs-component');
+      var c = document.querySelector('bio-component');
 
-      suite('<biojs-component>', function() {
+      suite('<bio-component>', function() {
 
         test('url is defined', function() {
           assert.typeOf(c.url, 'string');

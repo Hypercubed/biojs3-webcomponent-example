@@ -1,6 +1,6 @@
 Polymer({
   // Component Name
-  is: 'biojs-component',
+  is: 'bio-component',
 
   // Component Properties
   properties: {
