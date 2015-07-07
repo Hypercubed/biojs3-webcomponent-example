@@ -6,6 +6,9 @@
 
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
+    <!-- Add module loader for dependencies -->
+    <script src="../../systemjs/dist/system.js"></script>
+
     <!-- Add the component -->
     <link rel="import" href="../biojs-component.html">
 
@@ -15,7 +18,11 @@
   </head>
   <body unresolved>
 
-    <biojs-component url="https://gist.githubusercontent.com/mbostock/3885304/raw/2bbfdc87fc412e681b08474e9e407dfa7f57ea49/data.tsv" margin='{"top": 10, "right": 10, "bottom": 20, "left": 40}' width="640" height="480">
+    <biojs-component
+      url="https://gist.githubusercontent.com/mbostock/3885304/raw/2bbfdc87fc412e681b08474e9e407dfa7f57ea49/data.tsv"
+      margin='{"top": 10, "right": 10, "bottom": 20, "left": 40}'
+      width="640"
+      height="480">
     </biojs-component>
 
   </body>
