@@ -2,30 +2,30 @@
   display: block;
 }
 
-p {
+:host p {
   font-size: 1.4em;
   color: steelblue;
 }
 
-/deep/ .bar {
+::content .bar {
   fill: steelblue;
 }
 
-/deep/ .bar:hover {
+::content .bar:hover {
   fill: brown;
 }
 
-/deep/ .axis {
+::content .axis {
   font: 10px sans-serif;
 }
 
-/deep/ .axis path,
-/deep/ .axis line {
+::content .axis path,
+::content .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-/deep/ .x.axis path {
+::content .x.axis path {
   display: none;
 }
