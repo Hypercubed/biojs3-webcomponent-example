@@ -2,25 +2,30 @@
   display: block;
 }
 
-.bar {
+p {
+  font-size: 1.4em;
+  color: steelblue;
+}
+
+/deep/ .bar {
   fill: steelblue;
 }
 
-.bar:hover {
+/deep/ .bar:hover {
   fill: brown;
 }
 
-.axis {
+/deep/ .axis {
   font: 10px sans-serif;
 }
 
-.axis path,
-.axis line {
+/deep/ .axis path,
+/deep/ .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-.x.axis path {
+/deep/ .x.axis path {
   display: none;
 }

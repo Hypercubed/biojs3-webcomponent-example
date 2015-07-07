@@ -20,7 +20,9 @@ Polymer({
     */
     margin: {
       type: Object,
-      value: {top: 20, right: 20, bottom: 30, left: 40}
+      value: function() {
+        return {top: 20, right: 20, bottom: 30, left: 40}
+      }
     },
 
     /**
@@ -73,7 +75,10 @@ Polymer({
         .orient('left')
         .ticks(10, '%');
 
-    var svg = d3.select('body').append('svg')
+    var svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    Polymer.dom(this.root).appendChild(svgEl);
+
+    var svg = d3.select('svg')
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom)
       .append('g')
