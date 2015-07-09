@@ -1,59 +1,61 @@
-Polymer({
-  // Component Name
-  is: 'bio-component',
+class BioComponent {
+  constructor() {
+    Polymer(BioComponent.prototype);
+  }
 
-  // Component Properties
-  properties: {
-    /**
-    * Sets the url where to fetch the data
-    *
-    * @type {String}
-    */
-    url: {
-      type: String
-    },
+  get is() {
+    return  'bio-component';
+  }
 
-    /**
-    * Sets the margins of the graph
-    *
-    * @type {top: Number, right: Number, bottom: Number, left: Number}
-    */
-    margin: {
-      type: Object,
-      value: function() {
-        return {top: 20, right: 20, bottom: 30, left: 40}
+  get properties() {
+    return {
+      /**
+      * Sets the url where to fetch the data
+      *
+      * @type {String}
+      */
+      url: {
+        type: String
+      },
+
+      /**
+      * Sets the margins of the graph
+      *
+      * @type {top: Number, right: Number, bottom: Number, left: Number}
+      */
+      margin: {
+        type: Object,
+        value: () => ({
+          top: 20, right: 20, bottom: 30, left: 40
+        })
+      },
+
+      /**
+      * Sets the width of the graph
+      *
+      * @type {Number}
+      */
+      width: {
+        type: Number,
+        value: 960
+      },
+
+      /**
+      * Sets the height of the graph
+      * @type {Number}
+      */
+      height: {
+        type: Number,
+        value: 500
       }
-    },
+    };
+  }
 
-    /**
-    * Sets the width of the graph
-    *
-    * @type {Number}
-    */
-    width: {
-      type: Number,
-      value: 960
-    },
-
-    /**
-    * Sets the height of the graph
-    * @type {Number}
-    */
-    height: {
-      type: Number,
-      value: 500
-    }
-  },
-
-  // Component Lifecycle
-  ready: function() {
+  ready() {
     this._draw();
-  },
+  }
 
-  // Component Behavior
-
-  /** Main function that draws the graph */
-  _draw: function () {
+  _draw() {
     // Bar chart example from Mike Bostock
     // http://bl.ocks.org/mbostock/3885304
     var margin = this.margin;
@@ -117,5 +119,4 @@ Polymer({
       return d;
     }
   }
-
-});
+}
