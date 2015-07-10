@@ -10,17 +10,17 @@ System.config({
 
 System.config({
   "map": {
-    // MANUAL //
-    "html": "github:Hypercubed/systemjs-plugin-html@master",
-    "wc": "bower:webcomponentsjs@0.7.5/webcomponents-lite.min",
-    "polyHTML": "bower:polymer@1.0.5/polymer.html!html",
-
+    "Hypercubed/systemjs-plugin-html": "github:Hypercubed/systemjs-plugin-html@master",
     "d3": "github:mbostock/d3@3.5.6",
+    "html": "github:Hypercubed/systemjs-plugin-html@master",
+    "polyHTML": "bower:polymer@1.0.5/polymer.html!html",
     "polymer": "bower:polymer@1.0.5",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
+    "wc": "bower:webcomponentsjs@0.7.5/webcomponents-lite.min",
     "bower:polymer@1.0.5": {
       "webcomponentsjs": "bower:webcomponentsjs@0.7.5"
     }
   }
 });
+

@@ -1,5 +1,5 @@
 import 'wc';
-import 'polyHTML!html';
+//import 'polymer/polymer.html!';
 import 'bio-element.html!html';
 
 class BioElement {

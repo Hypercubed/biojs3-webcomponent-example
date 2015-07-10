@@ -18,12 +18,20 @@
       color: #444;
     }
   </style>
+
+  <link rel="import" href="bower_components/paper-button/paper-button.html"></link>
 </head>
 
 <body>
   <div class="hello">Loading a web component with SystemJS</div>
 
   <bio-element>content inside element</bio-element>
+
+  <p />
+  
+  <paper-button>flat button</paper-button>
+  <paper-button raised>raised button</paper-button>
+  <paper-button noink>No ripple effect</paper-button>
 
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>
